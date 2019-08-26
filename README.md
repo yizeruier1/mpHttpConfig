@@ -20,6 +20,8 @@
         }else{
             // 处理错误原因
             errorHandler(res, getRankData)
+            // 如果 getRankData 有参数, 参数跟在后面
+            // errorHandler(res, getRankData, param)
         }
     })
 ```
