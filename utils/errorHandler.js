@@ -16,7 +16,7 @@ const errorHandler = (res, cb) => {
                     // 获取回调函数的参数
                     const param = Array.prototype.slice.call(arguments, 2)
                     // 执行之前需要执行的事件
-                    cb(...param)
+                    if(cb) cb(...param)
                 } else {
                     tip(res1.msg)
                 }
